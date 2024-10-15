@@ -1,0 +1,13 @@
+## kafka-config.properties
+#bootstrap:
+#  servers: localhost:9092
+#security:
+#  protocol: SASL_PLAINTEXT
+#sasl:
+#  mechanism: SCRAM-SHA-512
+#key:
+#  serializer: org.apache.kafka.common.serialization.StringSerializer
+#value:
+#  serializer: org.apache.kafka.common.serialization.StringSerializer
+#group:
+#  id: my-group

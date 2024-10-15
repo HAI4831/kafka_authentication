@@ -1,0 +1,212 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="ssl_tsl_kafka" id="eGec_pED1HADVvbFYvz1">
+    <mxGraphModel dx="1784" dy="611" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uOno-ktKAhpssZojFqV2-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uOno-ktKAhpssZojFqV2-1" target="uOno-ktKAhpssZojFqV2-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="uOno-ktKAhpssZojFqV2-1" target="uOno-ktKAhpssZojFqV2-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-1" value="&lt;span class=&quot;hljs-selector-tag&quot;&gt;1)T&lt;/span&gt;ạ&lt;span class=&quot;hljs-selector-tag&quot;&gt;o&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;Keystore&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;v&lt;/span&gt;à &lt;span class=&quot;hljs-selector-tag&quot;&gt;C&lt;/span&gt;ặ&lt;span class=&quot;hljs-selector-tag&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;Kh&lt;/span&gt;ó&lt;span class=&quot;hljs-selector-tag&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;Ri&lt;/span&gt;ê&lt;span class=&quot;hljs-selector-tag&quot;&gt;ng&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;cho&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;CA&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="290" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="uOno-ktKAhpssZojFqV2-3" target="uOno-ktKAhpssZojFqV2-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-3" value="&lt;span class=&quot;hljs-selector-tag&quot;&gt;2)T&lt;/span&gt;ạ&lt;span class=&quot;hljs-selector-tag&quot;&gt;o&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;Keystore&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;v&lt;/span&gt;à &lt;span class=&quot;hljs-selector-tag&quot;&gt;C&lt;/span&gt;ặ&lt;span class=&quot;hljs-selector-tag&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;Kh&lt;/span&gt;ó&lt;span class=&quot;hljs-selector-tag&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;Ri&lt;/span&gt;ê&lt;span class=&quot;hljs-selector-tag&quot;&gt;ng&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;cho&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;Kafka&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;Broker&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="485" y="290" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uOno-ktKAhpssZojFqV2-4" target="uOno-ktKAhpssZojFqV2-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="uOno-ktKAhpssZojFqV2-4" target="uOno-ktKAhpssZojFqV2-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uOno-ktKAhpssZojFqV2-4" target="uOno-ktKAhpssZojFqV2-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uOno-ktKAhpssZojFqV2-4" target="uOno-ktKAhpssZojFqV2-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-4" value="&lt;span class=&quot;hljs-selector-tag&quot;&gt;1)Xu&lt;/span&gt;ấ&lt;span class=&quot;hljs-selector-tag&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;Ch&lt;/span&gt;ứ&lt;span class=&quot;hljs-selector-tag&quot;&gt;ng&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;Ch&lt;/span&gt;ỉ &lt;span class=&quot;hljs-selector-tag&quot;&gt;CA&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;sang&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;File&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;PEM&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="430" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uOno-ktKAhpssZojFqV2-5" target="uOno-ktKAhpssZojFqV2-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-5" value="&lt;span class=&quot;hljs-selector-tag&quot;&gt;3)T&lt;/span&gt;ạ&lt;span class=&quot;hljs-selector-tag&quot;&gt;o&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;Y&lt;/span&gt;ê&lt;span class=&quot;hljs-selector-tag&quot;&gt;u&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;C&lt;/span&gt;ầ&lt;span class=&quot;hljs-selector-tag&quot;&gt;u&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;K&lt;/span&gt;ý &lt;span class=&quot;hljs-selector-tag&quot;&gt;Ch&lt;/span&gt;ứ&lt;span class=&quot;hljs-selector-tag&quot;&gt;ng&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;Ch&lt;/span&gt;ỉ (CSR) &lt;span class=&quot;hljs-selector-tag&quot;&gt;cho&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;Kafka&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;Broker&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="485" y="430" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uOno-ktKAhpssZojFqV2-6" target="uOno-ktKAhpssZojFqV2-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-6" value="&amp;nbsp;&lt;span class=&quot;hljs-selector-tag&quot;&gt;Ch&lt;/span&gt;ứ&lt;span class=&quot;hljs-selector-tag&quot;&gt;ng&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;Ch&lt;/span&gt;ỉ &lt;span class=&quot;hljs-selector-tag&quot;&gt;Kafka&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;Broker&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="630" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uOno-ktKAhpssZojFqV2-7" target="uOno-ktKAhpssZojFqV2-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-7" value="&lt;span class=&quot;hljs-selector-tag&quot;&gt;7)Tạo và import Truststore cho kafka broker&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="860" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-14" value="Tạo ra" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uOno-ktKAhpssZojFqV2-11" target="uOno-ktKAhpssZojFqV2-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uOno-ktKAhpssZojFqV2-11" target="uOno-ktKAhpssZojFqV2-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-11" value="&lt;span class=&quot;hljs-selector-tag&quot;&gt;K&lt;/span&gt;ý&amp;nbsp;&lt;span class=&quot;hljs-selector-tag&quot;&gt;CSR&lt;/span&gt;&amp;nbsp;&lt;div&gt;&lt;span class=&quot;hljs-selector-tag&quot;&gt;b&lt;/span&gt;ằ&lt;span class=&quot;hljs-selector-tag&quot;&gt;ng&lt;/span&gt;&amp;nbsp;&lt;span class=&quot;hljs-selector-tag&quot;&gt;CA&lt;/span&gt;&amp;nbsp;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="510" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-16" value="&lt;span style=&quot;font-size:11.0pt;mso-bidi-font-size:14.0pt;&lt;br/&gt;line-height:107%;font-family:&amp;quot;Calibri&amp;quot;,sans-serif;mso-ascii-theme-font:minor-latin;&lt;br/&gt;mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-hansi-theme-font:&lt;br/&gt;minor-latin;mso-bidi-font-family:&amp;quot;Times New Roman&amp;quot;;mso-ansi-language:VI;&lt;br/&gt;mso-fareast-language:EN-US;mso-bidi-language:AR-SA&quot;&gt;Keystore của&amp;nbsp;&lt;/span&gt;kafka broker" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="850" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-18" value="&lt;span class=&quot;hljs-selector-tag&quot;&gt;C&lt;/span&gt;ấ&lt;span class=&quot;hljs-selector-tag&quot;&gt;u&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;H&lt;/span&gt;ì&lt;span class=&quot;hljs-selector-tag&quot;&gt;nh&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;SSL&lt;/span&gt;/&lt;span class=&quot;hljs-selector-tag&quot;&gt;TLS&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;Cho&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;Kafka&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;Broker&lt;/span&gt; &lt;span class=&quot;hljs-selector-tag&quot;&gt;v&lt;/span&gt;à &lt;span class=&quot;hljs-selector-tag&quot;&gt;Clients&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="975" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-30" value="Attribute" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" collapsed="1" parent="1">
+          <mxGeometry x="235" y="160" width="90" height="30" as="geometry">
+            <mxRectangle x="210" y="120" width="140" height="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-31" value="&lt;span class=&quot;hljs-selector-tag&quot;&gt;L&lt;/span&gt;ệ&lt;span class=&quot;hljs-selector-tag&quot;&gt;nh&lt;/span&gt;:&lt;span style=&quot;background-color: initial;&quot;&gt;keytool -genkeypair -alias CARoot -keyalg RSA -keysize 2048 -dname &quot;CN=Kafka CA, OU=IT, O=MyCompany, L=MyCity, S=MyState, C=MyCountry&quot; -keypass abCD@1234 -keystore kafka.ca.keystore.jks -storepass abCD@1234&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-30">
+          <mxGeometry y="20" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-32" value="Keystore :Chứa privateKey ,public key và chứng chỉ CA (certificate authority)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-30">
+          <mxGeometry y="50" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-33" value="&lt;br&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size:14.0pt;line-height:107%;&lt;br/&gt;font-family:&amp;quot;Courier New&amp;quot;;mso-ansi-language:EN-US&quot; lang=&quot;EN-US&quot;&gt;&lt;/span&gt;&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-30">
+          <mxGeometry y="80" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-38" value="List" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" collapsed="1" parent="1">
+          <mxGeometry x="630" y="140" width="60" height="30" as="geometry">
+            <mxRectangle x="630" y="140" width="140" height="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-39" value="lệnh :&lt;span style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 14pt; background-color: initial;&quot;&gt;keytool -genkeypair -alias&lt;br/&gt;kafka-broker -keyalg RSA -keysize 2048 -dname &quot;CN=my-kafka-broker, OU=IT,&lt;br/&gt;O=MyCompany, L=MyCity, S=MyState, C=MyCountry&quot; -keypass abCD@1234&lt;br/&gt;-keystore kafka.server.keystore.jks -storepass abCD@1234&lt;/span&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size:14.0pt;line-height:107%;&lt;br/&gt;font-family:&amp;quot;Courier New&amp;quot;;mso-ansi-language:EN-US&quot; lang=&quot;EN-US&quot;&gt;&lt;/span&gt;&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-38">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-40" value="Item 2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-38">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-41" value="Item 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-38">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-47" value="List" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" collapsed="1" parent="1">
+          <mxGeometry x="650" y="450" width="60" height="30" as="geometry">
+            <mxRectangle x="650" y="450" width="140" height="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-48" value="lệnh:&lt;span style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 14pt; background-color: initial;&quot;&gt;keytool -certreq -alias&lt;br/&gt;kafka-broker -keystore kafka.server.keystore.jks -file kafka-broker.csr&lt;br/&gt;-storepass abCD@1234&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 14pt; background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size:14.0pt;line-height:107%;&lt;br/&gt;font-family:&amp;quot;Courier New&amp;quot;;mso-ansi-language:EN-US&quot; lang=&quot;EN-US&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size:14.0pt;line-height:107%;&lt;br/&gt;font-family:&amp;quot;Courier New&amp;quot;;mso-ansi-language:EN-US&quot; lang=&quot;EN-US&quot;&gt;&lt;/span&gt;&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-47">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-49" value="Item 2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-47">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-50" value="Item 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-47">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.006;entryY=0.223;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="uOno-ktKAhpssZojFqV2-5" target="uOno-ktKAhpssZojFqV2-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.491;entryY=0.989;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="uOno-ktKAhpssZojFqV2-3" target="uOno-ktKAhpssZojFqV2-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-55" value="List" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" collapsed="1" parent="1">
+          <mxGeometry x="650" y="630" width="60" height="30" as="geometry">
+            <mxRectangle x="650" y="630" width="140" height="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-56" value="lệnh:&lt;span style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 14pt; background-color: initial;&quot;&gt;keytool -gencert -alias CARoot -keystore kafka.ca.keystore.jks&lt;br/&gt;-infile kafka-broker.csr -outfile kafka-broker-cert.pem -rfc -ext&lt;br/&gt;SAN=DNS:my-kafka-broker -storepass abCD@1234&lt;/span&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size:14.0pt;line-height:107%;font-family:&lt;br/&gt;&amp;quot;Courier New&amp;quot;&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size:14.0pt;line-height:107%;&lt;br/&gt;font-family:&amp;quot;Courier New&amp;quot;;mso-ansi-language:EN-US&quot; lang=&quot;EN-US&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size:14.0pt;line-height:107%;&lt;br/&gt;font-family:&amp;quot;Courier New&amp;quot;;mso-ansi-language:EN-US&quot; lang=&quot;EN-US&quot;&gt;&lt;/span&gt;&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-55">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-57" value="Item 2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-55">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-58" value="Item 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-55">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-60" value="List" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" collapsed="1" parent="1">
+          <mxGeometry x="530" y="765" width="60" height="30" as="geometry">
+            <mxRectangle x="610" y="790" width="140" height="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-61" value="lệnh:&lt;span style=&quot;background-color: initial; font-size: 14pt; line-height: 107%; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;keytool -importcert -alias kafka-broker -keystore&lt;br/&gt;kafka.server.keystore.jks&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 14pt; line-height: 107%; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 14pt; line-height: 107%; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;-file&lt;br/&gt;kafka-broker-cert.pem -storepass &lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 14pt; line-height: 107%; font-family: &amp;quot;Courier New&amp;quot;;&quot; lang=&quot;EN-US&quot;&gt;abCD@1234&lt;/span&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size:14.0pt;&lt;br/&gt;line-height:107%;font-family:&amp;quot;Courier New&amp;quot;;mso-ansi-language:EN-US&quot; lang=&quot;EN-US&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size:14.0pt;line-height:107%;font-family:&amp;quot;Courier New&amp;quot;&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size:14.0pt;line-height:107%;font-family:&lt;br/&gt;&amp;quot;Courier New&amp;quot;&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size:14.0pt;line-height:107%;&lt;br/&gt;font-family:&amp;quot;Courier New&amp;quot;;mso-ansi-language:EN-US&quot; lang=&quot;EN-US&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size:14.0pt;line-height:107%;&lt;br/&gt;font-family:&amp;quot;Courier New&amp;quot;;mso-ansi-language:EN-US&quot; lang=&quot;EN-US&quot;&gt;&lt;/span&gt;&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-60">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-62" value="Item 2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-60">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-63" value="Item 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-60">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uOno-ktKAhpssZojFqV2-66" target="uOno-ktKAhpssZojFqV2-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uOno-ktKAhpssZojFqV2-66" target="uOno-ktKAhpssZojFqV2-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-66" value="import vào" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="740" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uOno-ktKAhpssZojFqV2-70" target="uOno-ktKAhpssZojFqV2-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-70" value="import vào" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="600" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-73" value="Attribute" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" collapsed="1" parent="1">
+          <mxGeometry x="10" y="380" width="90" height="30" as="geometry">
+            <mxRectangle y="380" width="140" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-74" value="lệnh:Lệnh xuất chứng chỉ CA:&lt;span style=&quot;background-color: initial; font-family: &amp;quot;Courier New&amp;quot;; font-size: 14pt;&quot;&gt;keytool -exportcert -alias&lt;br&gt;CARoot -keystore kafka.ca.keystore.jks -file ca-cert.pem -rfc -storepass&lt;br&gt;abCD@1234&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-family: &amp;quot;Courier New&amp;quot;; font-size: 14pt;&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-73">
+          <mxGeometry y="20" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-76" value="&lt;br&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size:14.0pt;line-height:107%;&lt;br/&gt;font-family:&amp;quot;Courier New&amp;quot;;mso-ansi-language:EN-US&quot; lang=&quot;EN-US&quot;&gt;&lt;/span&gt;&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-73">
+          <mxGeometry y="50" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-80" value="List" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" collapsed="1" parent="1">
+          <mxGeometry x="-90" y="610" width="60" height="30" as="geometry">
+            <mxRectangle y="720" width="140" height="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-81" value="Lệnh:&lt;span style=&quot;background-color: initial; font-size: 14pt; line-height: 107%; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;keytool -importcert -alias CARoot -keystore&lt;br/&gt;kafka.server.keystore.jks&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 14pt; line-height: 107%; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 14pt; line-height: 107%; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;-file&lt;br/&gt;ca-cert.pem -storepass &lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 14pt; line-height: 107%; font-family: &amp;quot;Courier New&amp;quot;;&quot; lang=&quot;EN-US&quot;&gt;abCD@1234&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 14pt; line-height: 107%; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt; -noprompt&lt;/span&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size:14.0pt;line-height:107%;font-family:&amp;quot;Courier New&amp;quot;&quot;&gt;&lt;/span&gt;&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-80">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-82" value="Item 2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-80">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-83" value="Item 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-80">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uOno-ktKAhpssZojFqV2-85" target="uOno-ktKAhpssZojFqV2-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uOno-ktKAhpssZojFqV2-85" target="uOno-ktKAhpssZojFqV2-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-85" value="import vào" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="590" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-88" value="Attribute" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" collapsed="1" parent="1">
+          <mxGeometry x="10" y="1000" width="90" height="30" as="geometry">
+            <mxRectangle x="10" y="1000" width="140" height="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-89" value="lệnh:&lt;span style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 14pt; background-color: initial;&quot;&gt;keytool -keystore kafka.server.truststore.jks -alias CARoot \&lt;/span&gt;&lt;br&gt;&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot;font-size:14.0pt;line-height:107%;font-family:&amp;quot;Courier New&amp;quot;;&lt;br/&gt;mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-ansi-language:&lt;br/&gt;VI;mso-fareast-language:EN-US;mso-bidi-language:AR-SA&quot;&gt;-import -file&lt;br/&gt;ca-cert.pem -storepass &lt;/span&gt;&lt;span style=&quot;font-size:14.0pt;&lt;br/&gt;line-height:107%;font-family:&amp;quot;Courier New&amp;quot;;mso-fareast-font-family:Calibri;&lt;br/&gt;mso-fareast-theme-font:minor-latin;mso-ansi-language:EN-US;mso-fareast-language:&lt;br/&gt;EN-US;mso-bidi-language:AR-SA&quot; lang=&quot;EN-US&quot;&gt;abCD@1234&lt;/span&gt;&lt;span style=&quot;font-size:14.0pt;&lt;br/&gt;line-height:107%;font-family:&amp;quot;Courier New&amp;quot;;mso-fareast-font-family:Calibri;&lt;br/&gt;mso-fareast-theme-font:minor-latin;mso-ansi-language:VI;mso-fareast-language:&lt;br/&gt;EN-US;mso-bidi-language:AR-SA&quot;&gt; -noprompt&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-88">
+          <mxGeometry y="20" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-90" value="&lt;br&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size:14.0pt;line-height:107%;&lt;br/&gt;font-family:&amp;quot;Courier New&amp;quot;;mso-ansi-language:EN-US&quot; lang=&quot;EN-US&quot;&gt;&lt;/span&gt;&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="uOno-ktKAhpssZojFqV2-88">
+          <mxGeometry y="50" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uOno-ktKAhpssZojFqV2-95" value="keystore của kafka broker" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="710" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

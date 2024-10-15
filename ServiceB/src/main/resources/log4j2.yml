@@ -1,0 +1,33 @@
+#Configuration:
+#  status: debug
+#  appenders:
+#    Console:
+#      name: stdout
+#      target: SYSTEM_OUT
+#      PatternLayout:
+#        pattern: "[%d] %p %m (%c)"
+#  loggers:
+#    - name: org.apache.kafka.common.security.scram.ScramLoginModule
+#      level: debug
+#      additivity: false
+#      appenderRefs:
+#        - ref: stdout
+#    - name: org.apache.kafka.common.security.authenticator
+#      level: debug
+#      additivity: false
+#      appenderRefs:
+#        - ref: stdout
+#    - name: org.apache.kafka.common.security.ssl
+#      level: debug
+#      additivity: false
+#      appenderRefs:
+#        - ref: stdout
+#    - name: org.apache.kafka
+#      level: info
+#      additivity: false
+#      appenderRefs:
+#        - ref: stdout
+#  root:
+#    level: info
+#    appenders:
+#      - ref: stdout
