@@ -1,0 +1,65 @@
+apiVersion: apps/v1  # Xác định phiên bản API mà bạn đang sử dụng để tạo Deployment. "apps/v1" là phiên bản ổn định cho Deployment.
+kind: Deployment  # Loại tài nguyên mà bạn đang định nghĩa. Ở đây là Deployment, dùng để quản lý việc triển khai ứng dụng.
+metadata:  # Phần metadata chứa các thông tin về Deployment.
+  name: k8s-demo-deployment  # Tên của Deployment, sẽ được sử dụng để tham chiếu trong các lệnh kubectl và tài nguyên khác.
+  labels:  # Các nhãn giúp phân loại và tìm kiếm các tài nguyên trong Kubernetes.
+    app: k8s-demo  # Nhãn chỉ định ứng dụng, cho phép dễ dàng nhóm các tài nguyên cùng loại.
+
+spec:  # Phần này xác định các thông số kỹ thuật cho Deployment.
+  replicas: 3  # Số lượng bản sao (replica) của ứng dụng mà bạn muốn chạy, ở đây là 3. Kubernetes sẽ tự động tạo và quản lý các Pod.
+
+  selector:  # Selector giúp Kubernetes xác định những Pod nào thuộc về Deployment này.
+    matchLabels:  # Phần này định nghĩa các nhãn mà các Pod phải khớp với.
+      app: k8s-demo  # Nhãn cần khớp với nhãn của Pod để xác định chúng thuộc về Deployment.
+
+  template:  # Mẫu Pod mà Kubernetes sẽ tạo ra cho mỗi replica.
+    metadata:  # Phần metadata của Pod.
+      labels:  # Nhãn cho Pod.
+        app: k8s-demo  # Nhãn này phải khớp với nhãn trong selector để Kubernetes biết Pod này thuộc về Deployment nào.
+
+    spec:  # Phần xác định các thông số kỹ thuật cho Pod.
+      containers:  # Danh sách các container mà Pod sẽ chạy.
+        - name: identityservice  # Tên của container đầu tiên trong Pod.
+          image: popef23/identityservice:latest  # Hình ảnh Docker mà container này sẽ sử dụng. Ở đây, sử dụng hình ảnh từ Docker Hub.
+          ports:  # Danh sách các cổng mà container sẽ lắng nghe.
+            - containerPort: 8831  # Cổng bên trong container mà ứng dụng sẽ lắng nghe.
+
+          env:  # Danh sách các biến môi trường cho container.
+            - name: SPRING_PROFILES_ACTIVE  # Tên biến môi trường.
+              value: "prod"  # Giá trị của biến môi trường, ở đây chỉ định chế độ chạy là "prod".
+
+            - name: SPRING_R2DBC_URL  # Biến môi trường khác.
+              valueFrom:  # Chỉ định giá trị được lấy từ một tài nguyên khác (như ConfigMap).
+                configMapKeyRef:  # Tham chiếu đến một ConfigMap.
+                  name: configmap #k8s-demo-config  # Tên của ConfigMap chứa giá trị.
+                  key: application.yml  # Khóa trong ConfigMap mà bạn muốn lấy giá trị.
+
+            - name: DB_PASSWORD  # Biến môi trường cho mật khẩu của cơ sở dữ liệu.
+              valueFrom:  # Chỉ định giá trị được lấy từ một tài nguyên khác.
+                secretKeyRef:  # Tham chiếu đến một Secret.
+                  name: k8s-demo-secret  # Tên của Secret chứa giá trị.
+                  key: db-password  # Khóa trong Secret mà bạn muốn lấy giá trị.
+
+        - name: container-b  # Tên của container thứ hai trong Pod.
+          image: popef23/service-b:latest  # Hình ảnh Docker mà container này sẽ sử dụng.
+          ports:  # Danh sách các cổng mà container sẽ lắng nghe.
+            - containerPort: 8832  # Cổng bên trong container.
+
+          env:  # Danh sách các biến môi trường cho container.
+            - name: SPRING_PROFILES_ACTIVE  # Tên biến môi trường.
+              value: "prod"  # Giá trị của biến môi trường.
+
+            - name: SPRING_R2DBC_URL  # Biến môi trường khác.
+              valueFrom:  # Chỉ định giá trị được lấy từ một tài nguyên khác.
+                configMapKeyRef:  # Tham chiếu đến một ConfigMap.
+                  name: k8s-demo-config  # Tên của ConfigMap chứa giá trị.
+                  key: application.yml  # Khóa trong ConfigMap mà bạn muốn lấy giá trị.
+
+            - name: DB_PASSWORD  # Biến môi trường cho mật khẩu của cơ sở dữ liệu.
+              valueFrom:  # Chỉ định giá trị được lấy từ một tài nguyên khác.
+                secretKeyRef:  # Tham chiếu đến một Secret.
+                  name: k8s-demo-secret  # Tên của Secret chứa giá trị.
+                  key: db-password  # Khóa trong Secret mà bạn muốn lấy giá trị.
+
+      imagePullSecrets:  # Danh sách các secret mà Kubernetes sẽ sử dụng để pull hình ảnh từ Docker registry.
+        - name: my-registry-secret  # Tên của secret chứa thông tin đăng nhập vào Docker registry.

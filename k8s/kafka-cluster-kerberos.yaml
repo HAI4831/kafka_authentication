@@ -1,0 +1,29 @@
+apiVersion: kafka.strimzi.io/v1beta2
+kind: Kafka
+metadata:
+  name: my-cluster
+  namespace: kafka-namespace
+spec:
+  kafka:
+    version: "3.4.0"
+    replicas: 3
+    listeners:
+      plain: {}
+      tls:
+        authentication:
+          type: tls
+      sasl:
+        authentication:
+          type: kerberos
+    config:
+      sasl.kerberos.service.name: "kafka"
+    storage:
+      type: persistent-claim
+      size: 5Gi
+      class: standard
+  zookeeper:
+    replicas: 3
+    storage:
+      type: persistent-claim
+      size: 5Gi
+      class: standard

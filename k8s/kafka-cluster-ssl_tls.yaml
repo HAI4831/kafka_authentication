@@ -1,0 +1,5 @@
+listeners:
+  plain: {}
+  tls:
+    authentication:
+      type: tls

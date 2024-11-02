@@ -1,0 +1,1 @@
+INSERT INTO orders (price,status,customer_id) VALUES (100000,'PAID',1)

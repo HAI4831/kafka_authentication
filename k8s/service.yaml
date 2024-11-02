@@ -1,0 +1,12 @@
+apiVersion: v1  # Xác định phiên bản API mà bạn đang sử dụng cho Service. "v1" là phiên bản ổn định.
+kind: Service  # Loại tài nguyên, ở đây là Service, dùng để định nghĩa cách truy cập các Pod.
+metadata:  # Phần metadata chứa thông tin về Service.
+  name: k8s-demo-service  # Tên của Service.
+spec:  # Phần này xác định các thông số kỹ thuật cho Service.
+  type: ClusterIP  # Loại Service, "ClusterIP" cho phép truy cập từ trong cluster. Sử dụng "LoadBalancer" hoặc "NodePort" nếu cần truy cập bên ngoài.
+  selector:  # Chỉ định nhãn mà Service sẽ sử dụng để tìm các Pod.
+    app: k8s-demo  # Nhãn mà Pod phải khớp với để được Service quản lý.
+  ports:  # Danh sách các cổng mà Service sẽ lắng nghe.
+    - protocol: TCP  # Giao thức mà Service sẽ sử dụng.
+      port: 80  # Cổng mà Service sẽ lắng nghe từ bên ngoài.
+      targetPort: 8840  # Cổng mà các Pod sẽ lắng nghe, yêu cầu được chuyển đến cổng này trên Pod.

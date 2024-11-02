@@ -1,0 +1,7 @@
+apiVersion: v1  # Xác định phiên bản API mà bạn đang sử dụng cho ConfigMap. "v1" là phiên bản ổn định.
+kind: ConfigMap  # Loại tài nguyên, ở đây là ConfigMap, dùng để lưu trữ dữ liệu cấu hình không nhạy cảm.
+metadata:  # Phần metadata chứa thông tin về ConfigMap.
+  name: k8s-demo-config  # Tên của ConfigMap, sẽ được sử dụng để tham chiếu trong các Pod hoặc tài nguyên khác.
+data:  # Dữ liệu mà ConfigMap sẽ lưu trữ.
+  application.properties: |  # Tên của file cấu hình. Dấu "|" cho phép nhập nhiều dòng.
+    spring.r2dbc.url=r2dbc:postgresql://postgres-service:5432/distributedsystem  # Giá trị của thuộc tính cấu hình, chỉ định URL kết nối đến cơ sở dữ liệu.

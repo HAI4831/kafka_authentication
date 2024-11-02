@@ -1,0 +1,66 @@
+spring:
+  application:
+    name: service_order
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/kafka_auth
+    username: postgres_docker
+#    username: postgres
+    password: abCD@1234
+  sql:
+    init:
+      data-locations: classpath:data.sql
+      mode: always
+      schema-locations: classpath:schema.sql
+  kafka:
+    bootstrap-servers: localhost:9092
+#    bootstrap-servers: kafka-service:9092
+
+    # Producer Configuration
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      properties:
+        security.protocol: SASL_PLAINTEXT
+        sasl.mechanism: SCRAM-SHA-512
+        sasl.jaas.config: |
+          org.apache.kafka.common.security.scram.ScramLoginModule required
+          username="producer_order_service"
+          password="abCD@1234";
+
+    # Consumer Configuration
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      group-id: group_order
+      properties:
+        security.protocol: SASL_PLAINTEXT
+        ssl.truststore.location: classpath:ssl/kafka.client.truststore.jks
+        ssl.truststore.password: abCD@1234
+        ssl.keystore.location: classpath:ssl/kafka.client.keystore.jks
+        ssl.keystore.password: abCD@1234
+        ssl.key.password: abCD@1234
+        sasl.mechanism: SCRAM-SHA-512
+        sasl.jaas.config: |
+          org.apache.kafka.common.security.scram.ScramLoginModule required
+          username="consumer_payment_service"
+          password="abCD@1234";
+logging:
+  level:
+    org.apache.kafka.common.security.scram.ScramLoginModule: DEBUG
+    org.apache.kafka.common.security.authenticator: DEBUG
+    org.apache.kafka.common.security.ssl: DEBUG
+    org.apache.kafka: INFO
+    org.springframework.kafka: DEBUG
+
+  # Cấu hình Bảo mật OAuth2 (nếu cần)
+#  security:
+#    oauth2:
+#      resourceserver:
+#        jwt:
+#          issuer-uri: https://your-auth-server.com/
+#          jwk-set-uri: https://your-auth-server.com/.well-known/jwks.json
+#          audiences: https://my-resource-server.example.com
+#          jws-algorithms: RS512
+#          public-key-location: classpath:my-key.pub
+server:
+  port: 8881

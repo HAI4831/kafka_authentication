@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1  # Xác định phiên bản API cho Ingress. "networking.k8s.io/v1" là phiên bản ổn định.
+kind: Ingress  # lối vào:Loại tài nguyên, ở đây là Ingress, dùng để quản lý truy cập HTTP và HTTPS đến các dịch vụ trong cluster.
+metadata:  # Phần metadata chứa thông tin về Ingress.
+  name: k8s-demo-ingress  # Tên của Ingress.
+  annotations:  # Thêm thông tin cấu hình cho Ingress controller (như NGINX).
+    nginx.ingress.kubernetes.io/rewrite-target: /  # Chỉ định hành vi chuyển hướng cho các yêu cầu đến Ingress.
+spec:  # Phần này xác định các quy tắc cho Ingress.
+  rules:  # Danh sách các quy tắc để xử lý các yêu cầu.
+    - host: localhost  # Tên miền mà Ingress sẽ xử lý. Ở đây là localhost cho môi trường phát triển.
+      http:  # Phần xử lý HTTP.
+        paths:  # Danh sách các đường dẫn mà quy tắc sẽ áp dụng.
+          - path: /  # Đường dẫn mà quy tắc sẽ áp dụng.
+            pathType: Prefix  # Chỉ định kiểu đường dẫn (ở đây là "Prefix", có nghĩa là mọi đường dẫn bắt đầu bằng "/").
+            backend:  # Phần này chỉ định dịch vụ backend mà yêu cầu sẽ được chuyển đến.
+              service:  # Tham chiếu đến dịch vụ trong cluster.
+                name: kafka-service  # Tên của dịch vụ mà yêu cầu sẽ được chuyển đến.
+                port:  # Chỉ định cổng mà dịch vụ sẽ lắng nghe.
+                  number: 9092  # Cổng mà dịch vụ sẽ lắng nghe.

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-config
+  labels:
+    app: postgres
+data:
+  POSTGRES_DB: kafka_auth
+  POSTGRES_USER: postgreskube
+  POSTGRES_PASSWORD: abCD@1234

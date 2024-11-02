@@ -1,0 +1,38 @@
+zookeeper:
+  enabled: true  # Enable Zookeeper for Kafka in Zookeeper mode
+  auth:
+    enabled: false
+  resources:
+    limits:
+      cpu: 500m
+      memory: 1Gi
+    requests:
+      cpu: 200m
+      memory: 512Mi
+
+kafka:
+  kafkaKRaftMode: false  # Fully disable KRaft mode
+  enableMigration: false  # Ensure migration mode is also disabled
+  replicas: 3  # Set the number of Kafka broker nodes
+  controller:
+    replicaCount: 0  # Disable controller replicas (required in Zookeeper mode)
+  configurationOverrides:
+    log.dirs: "/bitnami/kafka/logs"
+    num.partitions: "3"
+    default.replication.factor: "2"
+    min.insync.replicas: "2"
+    auto.create.topics.enable: "false"
+  resources:
+    limits:
+      cpu: 1
+      memory: 2Gi
+    requests:
+      cpu: 500m
+      memory: 1Gi
+  auth:
+    clientProtocol: plaintext
+  externalAccess:
+    enabled: true
+    service:
+      type: LoadBalancer
+    servicePort: 9094
