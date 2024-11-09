@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: service_payment
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/kafka_auth
+    username: postgres_docker
+    password: abCD@1234
+  sql:
+    init:
+      data-locations: classpath:data.sql
+      mode: always
+      schema-locations: classpath:schema.sql
+  kafka:
+    bootstrap-servers: localhost:9092
+
+    # Cấu hình Producer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      properties:
+        security.protocol: SASL_PLAINTEXT
+        sasl.mechanism: SCRAM-SHA-512
+        sasl.jaas.config: |
+          org.apache.kafka.common.security.scram.ScramLoginModule required
+          username="producer_payment"
+          password="abCD@1234"
+
+    # Cấu hình Consumer
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      group-id: group_payment
+      properties:
+        security.protocol: SASL_PLAINTEXT
+        sasl.mechanism: SCRAM-SHA-512
+        sasl.jaas.config: |
+          org.apache.kafka.common.security.scram.ScramLoginModule required
+          username="consumer_payment"
+          password="abCD@1234";
+server:
+  port: 8882
+
+logging:
+  level:
+    org.apache.kafka: DEBUG
+    org.springframework.kafka: DEBUG
+

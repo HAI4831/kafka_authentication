@@ -22,7 +22,8 @@
       - D:\download\kafka\bin\windows>
       kafka-topics.bat --describe --topic my-topic --bootstrap-server localhost:9092
     + display list topic register:
-      - D:\download\kafka\bin\windows>kafka-topics.bat --list --bootstrap-server localhost:9092
+      - D:\download\kafka\bin\windows>
+        kafka-topics.bat --list --bootstrap-server localhost:9092
     + run display all message on topic 
       - D:\download\kafka\bin\windows>
       kafka-console-consumer.bat --topic my-topic --bootstrap-server localhost:9092 --from-beginning
@@ -44,3 +45,25 @@
 4. run postgres on kubernetes
 [guide](https://phoenixnap.com/kb/postgresql-kubernetes)
 kubectl exec -it postgres-666465d86b-77twz -- psql -h localhost -U postgreskube -p 5432 -d kafka_auth
+5. kafka register account client for jass-sasl:
+# set KAFKA_OPTS=-Djava.security.auth.login.config=D:\codevs\springboot\KafkaAuthentication\src\main\resources\kafka_server_jaas.conf
+   + kiểm tra tồn tại tài khoản đăng ký vào sasl kafka broker 
+     - kafka-configs --bootstrap-server localhost:9092 --describe --entity-type users
+   + Tạo tài khoản người dùng mới
+      - kafka-configs --bootstrap-server localhost:9092 --alter --add-config "SCRAM-SHA-512=[password=your-password]" --entity-type users --entity-name new-user
+   + Cập nhật tài khoản
+     - kafka-configs --bootstrap-server localhost:9092 --alter --add-config "SCRAM-SHA-512=[password=your-password]" --entity-type users --entity-name new-user
+   + xóa tài khoản
+     - kafka-configs --bootstrap-server localhost:9092 --delete --entity-type users --entity-name user-to-delete
+   + Kiểm tra cấu hình cụ thể một người dùng
+     - kafka-configs --bootstrap-server localhost:9092 --describe --entity-type users --entity-name specific-user
+
+
+kafka-configs --bootstrap-server localhost:9092 --alter --add-config "SCRAM-SHA-512=[password=admin-secret]" --entity-type users --entity-name admin
+
+kafka-configs --bootstrap-server localhost:9092 --alter --add-config "SCRAM-SHA-512=[password=abCD@1234]" --entity-type users --entity-name producer_order
+
+kafka-configs --bootstrap-server localhost:2181 --alter --add-config "SCRAM-SHA-512=[password=abCD@1234]" --entity-type users --entity-name producer_order
+kafka-configs --bootstrap-server localhost:2181 --alter --add-config "SCRAM-SHA-512=[password=abCD@1234]" --entity-type users --entity-name consumer_order
+kafka-configs --bootstrap-server localhost:2181 --alter --add-config "SCRAM-SHA-512=[password=abCD@1234]" --entity-type users --entity-name producer_payment
+kafka-configs --bootstrap-server localhost:2181 --alter --add-config "SCRAM-SHA-512=[password=abCD@1234]" --entity-type users --entity-name consumer_payment

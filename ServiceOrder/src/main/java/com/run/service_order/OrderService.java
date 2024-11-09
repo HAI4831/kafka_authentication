@@ -27,6 +27,7 @@ public class OrderService {
     public void listenToOrderCreateRequest(String message) {
         // Use Mono.defer() to keep it non-blocking and chain reactive processing
         Mono.defer(() -> {
+            System.out.println("message payment call order:" + message);
             OrderCreateRequest orderCreateRequest;
             try {
                 // Deserialize message to OrderCreateRequest

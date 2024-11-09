@@ -25,6 +25,9 @@ public class KafkaProducerConfig {
         configProps.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
         configProps.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         configProps.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
+        //sasl config
+        configProps.put("security.protocol", "SASL_PLAINTEXT");
+        configProps.put("sasl.mechanism", "SCRAM-SHA-256");
 
         return new DefaultKafkaProducerFactory<>(configProps);
     }
